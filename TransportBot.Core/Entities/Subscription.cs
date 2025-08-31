@@ -6,7 +6,25 @@ using System.Threading.Tasks;
 
 namespace TransportBot.Core.Entities
 {
-    internal class Subscription
+    public class Subscription
     {
+        public int Id { get; set; }
+
+        public int UserId { get; set; }
+        public User User { get; set; }
+
+        public int StopId { get; set; }
+        public TransportStop Stop { get; set; }
+
+        public int RouteId { get; set; }
+        public Route Route { get; set; }
+
+        public int NotifyBeforeMinutes { get; set; }
+
+        public bool IsActive { get; set; }
+
+        public DateTime LastNotifiedAt { get; set; }
+
+        public DateTime CreatedAt { get; set; }
     }
 }
