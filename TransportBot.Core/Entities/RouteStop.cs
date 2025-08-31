@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace TransportBot.Core.Entities
 {
-    internal class Route
+    public class RouteStop
     {
+        public int Id { get; set; }
+
+        public int RouteId { get; set; }
+        public Route Route { get; set; }
+
+        public int StopId { get; set; }
+        public TransportStop Stop { get; set; }
+
+        public int Sequence { get; set; }
     }
 }

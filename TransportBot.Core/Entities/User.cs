@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace TransportBot.Core.Entities
 {
-    internal class User
+    public class User
     {
+        public int Id { get; set; }
+        public long TelegramId { get; set; }
+        public string UserName { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public double? LocationLatitude { get; set; }
+        public double? LocationLongitude { get; set;}
     }
 }
