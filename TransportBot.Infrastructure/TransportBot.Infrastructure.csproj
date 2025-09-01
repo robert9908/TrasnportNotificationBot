@@ -12,4 +12,8 @@
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TransportBot.Core\TransportBot.Core.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -281,6 +281,16 @@
         "build": {
           "buildTransitive/net8.0/_._": {}
         }
+      },
+      "TransportBot.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/TransportBot.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TransportBot.Core.dll": {}
+        }
       }
     }
   },
@@ -721,13 +731,19 @@
         "system.diagnostics.diagnosticsource.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "TransportBot.Core/1.0.0": {
+      "type": "project",
+      "path": "../TransportBot.Core/TransportBot.Core.csproj",
+      "msbuildProject": "../TransportBot.Core/TransportBot.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "Microsoft.EntityFrameworkCore >= 9.0.8",
       "Npgsql >= 9.0.3",
-      "Npgsql.EntityFrameworkCore.PostgreSQL >= 9.0.4"
+      "Npgsql.EntityFrameworkCore.PostgreSQL >= 9.0.4",
+      "TransportBot.Core >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -756,7 +772,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Николай\\Desktop\\TransportNotificationBot\\TransportBot.Core\\TransportBot.Core.csproj": {
+              "projectPath": "C:\\Users\\Николай\\Desktop\\TransportNotificationBot\\TransportBot.Core\\TransportBot.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

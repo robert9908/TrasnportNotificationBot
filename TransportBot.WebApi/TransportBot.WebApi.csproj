@@ -18,4 +18,9 @@
     <PackageReference Include="Telegram.Bot" Version="22.6.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TransportBot.Infrastructure\TransportBot.Infrastructure.csproj" />
+    <ProjectReference Include="..\TransportBot.Core\TransportBot.Core.csproj" />
+  </ItemGroup>
+
 </Project>
