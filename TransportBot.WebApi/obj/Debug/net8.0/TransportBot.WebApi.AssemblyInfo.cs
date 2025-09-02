@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TransportBot.WebApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0445b62f78eb3a1a908daffdcdc1857c37467411")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e05fa73db5e375a3728530ac620b30a56bfd43cf")]
 [assembly: System.Reflection.AssemblyProductAttribute("TransportBot.WebApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TransportBot.WebApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
