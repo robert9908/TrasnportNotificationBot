@@ -1,6 +1,4 @@
 ﻿namespace TransportBot.WebApi.DTOs
 {
-    public class UpdateUserRequest
-    {
-    }
+    public record UpdateUserRequest(string? UserName, double? Latitude, double? Longitude);
 }

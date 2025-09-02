@@ -1,6 +1,4 @@
 ﻿namespace TransportBot.WebApi.DTOs
 {
-    public class RegisterRequest
-    {
-    }
+    public record RegisterRequest(long TelegramId, string? UserName);
 }
