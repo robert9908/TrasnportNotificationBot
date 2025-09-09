@@ -9,7 +9,7 @@ namespace TransportBot.Services.BackgroundServices
     {
         private readonly IServiceProvider _serviceProvider;
         private readonly ILogger<NotificationBackgroundService> _logger;
-        private readonly TimeSpan _checkInterval = TimeSpan.FromMinutes(1);
+        private readonly TimeSpan _checkInterval = TimeSpan.FromSeconds(30);
 
         public NotificationBackgroundService(
             IServiceProvider serviceProvider,
@@ -36,6 +36,7 @@ namespace TransportBot.Services.BackgroundServices
                 }
                 catch (OperationCanceledException)
                 {
+                    _logger.LogInformation("Notification Background Service cancelled");
                     break;
                 }
                 catch (Exception ex)

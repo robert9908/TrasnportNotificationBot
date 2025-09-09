@@ -22,17 +22,17 @@ namespace TransportBot.Services.Services
 
         public async Task<int> GetMinutesUntilArrivalAsync(int routeId, int stopId)
         {
-            return -1;
+            return await _yandexApiService.GetMinutesUntilArrivalAsync(routeId.ToString(), stopId.ToString());
         }
 
         public async Task<IEnumerable<TransportArrival>> GetArrivalsAsync(int stopId)
         {
-            return Enumerable.Empty<TransportArrival>();
+            return await _yandexApiService.GetArrivalsAsync(stopId.ToString());
         }
 
         public async Task<bool> IsRouteActiveAsync(int routeId)
         {
-            return false;
+            return await _yandexApiService.IsRouteActiveAsync(routeId.ToString(), "default");
         }
 
         public async Task<int> GetMinutesUntilArrivalAsync(string routeNumber, string stationCode)

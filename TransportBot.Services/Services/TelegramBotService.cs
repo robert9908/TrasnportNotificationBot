@@ -530,19 +530,11 @@ namespace TransportBot.Services.Services
         {
             var message = "🚌 Добро пожаловать в бот уведомлений о транспорте!\n\n" +
                          "Я помогу вам получать уведомления о прибытии общественного транспорта.\n\n" +
-                         "🔍 Выберите способ поиска остановок:\n" +
-                         "📍 /moscow - остановки Москвы\n" +
-                         "🔍 /search название - поиск по названию\n" +
-                         "📋 /stops - все остановки\n" +
-                         "📍 Или поделитесь геолокацией (только в мобильном приложении)";
+                         "🔍 Способы поиска остановок:\n" +
+                         "📍 Поделитесь геолокацией для поиска ближайших остановок\n" +
+                         "🔍 /search <название> - поиск по названию";
 
-            var buttons = new List<List<(string text, string callbackData)>>
-            {
-                new() { ("🏙️ Остановки Москвы", "moscow_stops") },
-                new() { ("📋 Все остановки", "all_stops") }
-            };
-
-            await SendInlineKeyboardAsync(chatId, message, buttons);
+            await SendLocationRequestAsync(chatId, message);
         }
 
         private async Task ShowUserSubscriptionsAsync(long chatId, long userId)
@@ -624,68 +616,12 @@ namespace TransportBot.Services.Services
 
         private async Task ShowMoscowStopsAsync(long chatId)
         {
-            try
-            {
-                var stops = await _transportStopService.GetStopsAsync("Москва");
-                var stopsList = stops.Take(15).ToList();
-
-                if (stopsList.Any())
-                {
-                    var buttons = new List<List<(string text, string callbackData)>>();
-                    
-                    foreach (var stop in stopsList)
-                    {
-                        buttons.Add(new List<(string, string)> 
-                        { 
-                            ($"📍 {stop.Name}", $"stop_{stop.Id}") 
-                        });
-                    }
-
-                    await SendInlineKeyboardAsync(chatId, "🏙️ Остановки Москвы:", buttons);
-                }
-                else
-                {
-                    await SendMessageAsync(chatId, "❌ Остановки Москвы не найдены.");
-                }
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "Error showing Moscow stops");
-                await SendMessageAsync(chatId, "❌ Ошибка при загрузке остановок Москвы.");
-            }
+            await SendMessageAsync(chatId, "🔍 Поделитесь геолокацией для поиска ближайших остановок или используйте /search <название>");
         }
 
         private async Task ShowAllStopsAsync(long chatId)
         {
-            try
-            {
-                var stops = await _transportStopService.GetStopsAsync();
-                var stopsList = stops.Take(20).ToList();
-
-                if (stopsList.Any())
-                {
-                    var buttons = new List<List<(string text, string callbackData)>>();
-                    
-                    foreach (var stop in stopsList)
-                    {
-                        buttons.Add(new List<(string, string)> 
-                        { 
-                            ($"📍 {stop.Name}", $"stop_{stop.Id}") 
-                        });
-                    }
-
-                    await SendInlineKeyboardAsync(chatId, "📋 Все остановки:", buttons);
-                }
-                else
-                {
-                    await SendMessageAsync(chatId, "❌ Остановки не найдены.");
-                }
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "Error showing all stops");
-                await SendMessageAsync(chatId, "❌ Ошибка при загрузке остановок.");
-            }
+            await SendMessageAsync(chatId, "🔍 Поделитесь геолокацией для поиска ближайших остановок или используйте /search <название>");
         }
 
         private async Task SearchStopsByNameAsync(long chatId, string searchQuery)
