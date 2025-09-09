@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,6 +11,7 @@ namespace TransportBot.Core.Interfaces
     {
         Task<User> RegisterAsync(long telegramId, string? userName);
         Task<User?> GetAsync(int id);
+        Task<User?> GetUserByTelegramIdAsync(long telegramId);
         Task<User> UpdateAsync(int id, string? userName, double? lat, double? lng);
         Task DeleteAsync(int id);
     }

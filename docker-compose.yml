@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: transport_bot_db
+    environment:
+      POSTGRES_DB: transport_bot
+      POSTGRES_USER: transport_user
+      POSTGRES_PASSWORD: transport_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U transport_user -d transport_bot"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  transport_bot:
+    build: .
+    container_name: transport_bot_app
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_URLS=http://+:8080
+      - ConnectionStrings__DefaultConnection=Host=postgres;Database=transport_bot;Username=transport_user;Password=transport_password
+      - TelegramBot__Token=${TELEGRAM_BOT_TOKEN}
+      - TelegramBot__WebhookUrl=${WEBHOOK_URL}
+    ports:
+      - "8080:8080"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  postgres_data:

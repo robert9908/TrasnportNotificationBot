@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 using TransportBot.Core.Entities;
 using TransportBot.Core.Interfaces;
 
-namespace TransportBot.Infrastructure.Services
+
+
+namespace TransportBot.Services
 {
     public class UserService : IUserService
     {
@@ -25,6 +27,11 @@ namespace TransportBot.Infrastructure.Services
         public async Task<User?> GetAsync(int id)
         {
             return await _repository.GetByIdAsync(id);
+        }
+
+        public async Task<User?> GetUserByTelegramIdAsync(long telegramId)
+        {
+            return await _repository.GetByTelegramIdAsync(telegramId);
         }
 
         public async Task<User> RegisterAsync(long telegramId, string? userName)
@@ -49,7 +56,7 @@ namespace TransportBot.Infrastructure.Services
         public async Task<User> UpdateAsync(int id, string? userName, double? lat, double? lng)
         {
             var user = await _repository.GetByIdAsync(id)
-                        ?? throw new Exception("User not foud");
+                        ?? throw new Exception("User not found");
 
             user.UserName = userName ?? user.UserName;
             user.LocationLatitude = lat ?? user.LocationLatitude;
