@@ -17,7 +17,7 @@ namespace TransportBot.Infrastructure.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "9.0.8")
+                .HasAnnotation("ProductVersion", "8.0.8")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
@@ -46,6 +46,8 @@ namespace TransportBot.Infrastructure.Migrations
                         .HasColumnType("text");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ExternalId");
 
                     b.ToTable("Routes");
                 });
@@ -87,6 +89,12 @@ namespace TransportBot.Infrastructure.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("timestamp with time zone");
 
+                    b.Property<string>("ExternalRouteNumber")
+                        .HasColumnType("text");
+
+                    b.Property<string>("ExternalStopCode")
+                        .HasColumnType("text");
+
                     b.Property<bool>("IsActive")
                         .HasColumnType("boolean");
 
@@ -96,10 +104,10 @@ namespace TransportBot.Infrastructure.Migrations
                     b.Property<int>("NotifyBeforeMinutes")
                         .HasColumnType("integer");
 
-                    b.Property<int>("RouteId")
+                    b.Property<int?>("RouteId")
                         .HasColumnType("integer");
 
-                    b.Property<int>("StopId")
+                    b.Property<int?>("StopId")
                         .HasColumnType("integer");
 
                     b.Property<int>("UserId")
@@ -173,6 +181,8 @@ namespace TransportBot.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("ExternalId");
+
                     b.ToTable("Stops");
                 });
 
@@ -202,6 +212,9 @@ namespace TransportBot.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("TelegramId")
+                        .IsUnique();
+
                     b.ToTable("Users");
                 });
 
@@ -229,14 +242,12 @@ namespace TransportBot.Infrastructure.Migrations
                     b.HasOne("TransportBot.Core.Entities.Route", "Route")
                         .WithMany()
                         .HasForeignKey("RouteId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("TransportBot.Core.Entities.TransportStop", "Stop")
                         .WithMany()
                         .HasForeignKey("StopId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("TransportBot.Core.Entities.User", "User")
                         .WithMany()

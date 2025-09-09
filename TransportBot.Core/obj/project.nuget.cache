@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "4fwzj2XJoWpFO98YGFcRT8sYXicR3GYZ+nP9LIh6S/B+92pIPTqlzIvgZVwjYoW5GPOLu/Y5K4GpuUo8bybaeg==",
+  "dgSpecHash": "yM7B7MGxpCiV2nPwfPvQH/rl0lj9mfSRWw4uP1YTkBz0vzsvNxSYFFU84X4fB5BgK6+PYU3UFt4vy4jPRZQ6Nw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Николай\\Desktop\\TransportNotificationBot\\TransportBot.Core\\TransportBot.Core.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Николай\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Николай\\.nuget\\packages\\telegram.bot\\19.0.0\\telegram.bot.19.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

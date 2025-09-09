@@ -3,28 +3,124 @@
   "WorkspaceRootPath": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E88A651E-9832-4328-ABEE-43B7910B1698}|TransportBot.Infrastructure\\TransportBot.Infrastructure.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\transportnotificationbot\\transportbot.infrastructure\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E88A651E-9832-4328-ABEE-43B7910B1698}|TransportBot.Infrastructure\\TransportBot.Infrastructure.csproj|solutionrelative:transportbot.infrastructure\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DB380852-4DEF-4ECE-8E4B-A9819E2BEBAF}|TransportBot.Services\\TransportBot.Services.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\transportnotificationbot\\transportbot.services\\services\\transportapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB380852-4DEF-4ECE-8E4B-A9819E2BEBAF}|TransportBot.Services\\TransportBot.Services.csproj|solutionrelative:transportbot.services\\services\\transportapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75CD0D50-C939-4757-BFF9-31598FCD74E6}|TransportBot.Core\\TransportBot.Core.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\transportnotificationbot\\transportbot.core\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75CD0D50-C939-4757-BFF9-31598FCD74E6}|TransportBot.Core\\TransportBot.Core.csproj|solutionrelative:transportbot.core\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{75CD0D50-C939-4757-BFF9-31598FCD74E6}|TransportBot.Core\\TransportBot.Core.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\transportnotificationbot\\transportbot.core\\interfaces\\itransportapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75CD0D50-C939-4757-BFF9-31598FCD74E6}|TransportBot.Core\\TransportBot.Core.csproj|solutionrelative:transportbot.core\\interfaces\\itransportapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75CD0D50-C939-4757-BFF9-31598FCD74E6}|TransportBot.Core\\TransportBot.Core.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\transportnotificationbot\\transportbot.core\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75CD0D50-C939-4757-BFF9-31598FCD74E6}|TransportBot.Core\\TransportBot.Core.csproj|solutionrelative:transportbot.core\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DB380852-4DEF-4ECE-8E4B-A9819E2BEBAF}|TransportBot.Services\\TransportBot.Services.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\transportnotificationbot\\transportbot.services\\services\\geocodingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB380852-4DEF-4ECE-8E4B-A9819E2BEBAF}|TransportBot.Services\\TransportBot.Services.csproj|solutionrelative:transportbot.services\\services\\geocodingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E88A651E-9832-4328-ABEE-43B7910B1698}|TransportBot.Infrastructure\\TransportBot.Infrastructure.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\transportnotificationbot\\transportbot.infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E88A651E-9832-4328-ABEE-43B7910B1698}|TransportBot.Infrastructure\\TransportBot.Infrastructure.csproj|solutionrelative:transportbot.infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DB380852-4DEF-4ECE-8E4B-A9819E2BEBAF}|TransportBot.Services\\TransportBot.Services.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\transportnotificationbot\\transportbot.services\\services\\telegrambotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB380852-4DEF-4ECE-8E4B-A9819E2BEBAF}|TransportBot.Services\\TransportBot.Services.csproj|solutionrelative:transportbot.services\\services\\telegrambotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB380852-4DEF-4ECE-8E4B-A9819E2BEBAF}|TransportBot.Services\\TransportBot.Services.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\transportnotificationbot\\transportbot.services\\services\\refactoredtransportapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB380852-4DEF-4ECE-8E4B-A9819E2BEBAF}|TransportBot.Services\\TransportBot.Services.csproj|solutionrelative:transportbot.services\\services\\refactoredtransportapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB380852-4DEF-4ECE-8E4B-A9819E2BEBAF}|TransportBot.Services\\TransportBot.Services.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\transportnotificationbot\\transportbot.services\\services\\yandexapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB380852-4DEF-4ECE-8E4B-A9819E2BEBAF}|TransportBot.Services\\TransportBot.Services.csproj|solutionrelative:transportbot.services\\services\\yandexapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{682FE551-0840-45AB-BEC1-D84FBC494910}|TransportBot.WebApi\\TransportBot.WebApi.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\transportnotificationbot\\transportbot.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{682FE551-0840-45AB-BEC1-D84FBC494910}|TransportBot.WebApi\\TransportBot.WebApi.csproj|solutionrelative:transportbot.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{682FE551-0840-45AB-BEC1-D84FBC494910}|TransportBot.WebApi\\TransportBot.WebApi.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\transportnotificationbot\\transportbot.webapi\\controllers\\routecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{682FE551-0840-45AB-BEC1-D84FBC494910}|TransportBot.WebApi\\TransportBot.WebApi.csproj|solutionrelative:transportbot.webapi\\controllers\\routecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75CD0D50-C939-4757-BFF9-31598FCD74E6}|TransportBot.Core\\TransportBot.Core.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\transportnotificationbot\\transportbot.core\\interfaces\\itelegrambotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75CD0D50-C939-4757-BFF9-31598FCD74E6}|TransportBot.Core\\TransportBot.Core.csproj|solutionrelative:transportbot.core\\interfaces\\itelegrambotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E88A651E-9832-4328-ABEE-43B7910B1698}|TransportBot.Infrastructure\\TransportBot.Infrastructure.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\transportnotificationbot\\transportbot.infrastructure\\repositories\\transportstoprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E88A651E-9832-4328-ABEE-43B7910B1698}|TransportBot.Infrastructure\\TransportBot.Infrastructure.csproj|solutionrelative:transportbot.infrastructure\\repositories\\transportstoprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{682FE551-0840-45AB-BEC1-D84FBC494910}|TransportBot.WebApi\\TransportBot.WebApi.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\transportnotificationbot\\transportbot.webapi\\controllers\\telegramcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{682FE551-0840-45AB-BEC1-D84FBC494910}|TransportBot.WebApi\\TransportBot.WebApi.csproj|solutionrelative:transportbot.webapi\\controllers\\telegramcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E88A651E-9832-4328-ABEE-43B7910B1698}|TransportBot.Infrastructure\\TransportBot.Infrastructure.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\transportnotificationbot\\transportbot.infrastructure\\repositories\\routerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E88A651E-9832-4328-ABEE-43B7910B1698}|TransportBot.Infrastructure\\TransportBot.Infrastructure.csproj|solutionrelative:transportbot.infrastructure\\repositories\\routerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{682FE551-0840-45AB-BEC1-D84FBC494910}|TransportBot.WebApi\\TransportBot.WebApi.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\transportnotificationbot\\transportbot.webapi\\controllers\\subscriptioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{682FE551-0840-45AB-BEC1-D84FBC494910}|TransportBot.WebApi\\TransportBot.WebApi.csproj|solutionrelative:transportbot.webapi\\controllers\\subscriptioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75CD0D50-C939-4757-BFF9-31598FCD74E6}|TransportBot.Core\\TransportBot.Core.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\transportnotificationbot\\transportbot.core\\interfaces\\isubscriptionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75CD0D50-C939-4757-BFF9-31598FCD74E6}|TransportBot.Core\\TransportBot.Core.csproj|solutionrelative:transportbot.core\\interfaces\\isubscriptionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E88A651E-9832-4328-ABEE-43B7910B1698}|TransportBot.Infrastructure\\TransportBot.Infrastructure.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\transportnotificationbot\\transportbot.infrastructure\\repositories\\subscriptionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E88A651E-9832-4328-ABEE-43B7910B1698}|TransportBot.Infrastructure\\TransportBot.Infrastructure.csproj|solutionrelative:transportbot.infrastructure\\repositories\\subscriptionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB380852-4DEF-4ECE-8E4B-A9819E2BEBAF}|TransportBot.Services\\TransportBot.Services.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\transportnotificationbot\\transportbot.services\\services\\routeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB380852-4DEF-4ECE-8E4B-A9819E2BEBAF}|TransportBot.Services\\TransportBot.Services.csproj|solutionrelative:transportbot.services\\services\\routeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB380852-4DEF-4ECE-8E4B-A9819E2BEBAF}|TransportBot.Services\\TransportBot.Services.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\transportnotificationbot\\transportbot.services\\services\\subscriptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB380852-4DEF-4ECE-8E4B-A9819E2BEBAF}|TransportBot.Services\\TransportBot.Services.csproj|solutionrelative:transportbot.services\\services\\subscriptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{682FE551-0840-45AB-BEC1-D84FBC494910}|TransportBot.WebApi\\TransportBot.WebApi.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\transportnotificationbot\\transportbot.webapi\\controllers\\transportstopcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{682FE551-0840-45AB-BEC1-D84FBC494910}|TransportBot.WebApi\\TransportBot.WebApi.csproj|solutionrelative:transportbot.webapi\\controllers\\transportstopcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75CD0D50-C939-4757-BFF9-31598FCD74E6}|TransportBot.Core\\TransportBot.Core.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\transportnotificationbot\\transportbot.core\\interfaces\\itransportstopservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75CD0D50-C939-4757-BFF9-31598FCD74E6}|TransportBot.Core\\TransportBot.Core.csproj|solutionrelative:transportbot.core\\interfaces\\itransportstopservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75CD0D50-C939-4757-BFF9-31598FCD74E6}|TransportBot.Core\\TransportBot.Core.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\transportnotificationbot\\transportbot.core\\interfaces\\itransportstoprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75CD0D50-C939-4757-BFF9-31598FCD74E6}|TransportBot.Core\\TransportBot.Core.csproj|solutionrelative:transportbot.core\\interfaces\\itransportstoprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{75CD0D50-C939-4757-BFF9-31598FCD74E6}|TransportBot.Core\\TransportBot.Core.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\transportnotificationbot\\transportbot.core\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{75CD0D50-C939-4757-BFF9-31598FCD74E6}|TransportBot.Core\\TransportBot.Core.csproj|solutionrelative:transportbot.core\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{DB380852-4DEF-4ECE-8E4B-A9819E2BEBAF}|TransportBot.Services\\TransportBot.Services.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\transportnotificationbot\\transportbot.services\\transportbot.services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DB380852-4DEF-4ECE-8E4B-A9819E2BEBAF}|TransportBot.Services\\TransportBot.Services.csproj|solutionrelative:transportbot.services\\transportbot.services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB380852-4DEF-4ECE-8E4B-A9819E2BEBAF}|TransportBot.Services\\TransportBot.Services.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\transportnotificationbot\\transportbot.services\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB380852-4DEF-4ECE-8E4B-A9819E2BEBAF}|TransportBot.Services\\TransportBot.Services.csproj|solutionrelative:transportbot.services\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75CD0D50-C939-4757-BFF9-31598FCD74E6}|TransportBot.Core\\TransportBot.Core.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\transportnotificationbot\\transportbot.core\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75CD0D50-C939-4757-BFF9-31598FCD74E6}|TransportBot.Core\\TransportBot.Core.csproj|solutionrelative:transportbot.core\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{682FE551-0840-45AB-BEC1-D84FBC494910}|TransportBot.WebApi\\TransportBot.WebApi.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\transportnotificationbot\\transportbot.webapi\\transportbot.webapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{682FE551-0840-45AB-BEC1-D84FBC494910}|TransportBot.WebApi\\TransportBot.WebApi.csproj|solutionrelative:transportbot.webapi\\transportbot.webapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{682FE551-0840-45AB-BEC1-D84FBC494910}|TransportBot.WebApi\\TransportBot.WebApi.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\transportnotificationbot\\transportbot.webapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{682FE551-0840-45AB-BEC1-D84FBC494910}|TransportBot.WebApi\\TransportBot.WebApi.csproj|solutionrelative:transportbot.webapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{682FE551-0840-45AB-BEC1-D84FBC494910}|TransportBot.WebApi\\TransportBot.WebApi.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\transportnotificationbot\\transportbot.webapi\\dtos\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{682FE551-0840-45AB-BEC1-D84FBC494910}|TransportBot.WebApi\\TransportBot.WebApi.csproj|solutionrelative:transportbot.webapi\\dtos\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{682FE551-0840-45AB-BEC1-D84FBC494910}|TransportBot.WebApi\\TransportBot.WebApi.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\transportnotificationbot\\transportbot.webapi\\dtos\\updateuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{682FE551-0840-45AB-BEC1-D84FBC494910}|TransportBot.WebApi\\TransportBot.WebApi.csproj|solutionrelative:transportbot.webapi\\dtos\\updateuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75CD0D50-C939-4757-BFF9-31598FCD74E6}|TransportBot.Core\\TransportBot.Core.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\transportnotificationbot\\transportbot.core\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75CD0D50-C939-4757-BFF9-31598FCD74E6}|TransportBot.Core\\TransportBot.Core.csproj|solutionrelative:transportbot.core\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E88A651E-9832-4328-ABEE-43B7910B1698}|TransportBot.Infrastructure\\TransportBot.Infrastructure.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\transportnotificationbot\\transportbot.infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E88A651E-9832-4328-ABEE-43B7910B1698}|TransportBot.Infrastructure\\TransportBot.Infrastructure.csproj|solutionrelative:transportbot.infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{75CD0D50-C939-4757-BFF9-31598FCD74E6}|TransportBot.Core\\TransportBot.Core.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\transportnotificationbot\\transportbot.core\\entities\\routestop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -37,10 +133,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E88A651E-9832-4328-ABEE-43B7910B1698}|TransportBot.Infrastructure\\TransportBot.Infrastructure.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\transportnotificationbot\\transportbot.infrastructure\\data\\transportdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E88A651E-9832-4328-ABEE-43B7910B1698}|TransportBot.Infrastructure\\TransportBot.Infrastructure.csproj|solutionrelative:transportbot.infrastructure\\data\\transportdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{682FE551-0840-45AB-BEC1-D84FBC494910}|TransportBot.WebApi\\TransportBot.WebApi.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\transportnotificationbot\\transportbot.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{682FE551-0840-45AB-BEC1-D84FBC494910}|TransportBot.WebApi\\TransportBot.WebApi.csproj|solutionrelative:transportbot.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{682FE551-0840-45AB-BEC1-D84FBC494910}|TransportBot.WebApi\\TransportBot.WebApi.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\desktop\\transportnotificationbot\\transportbot.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -70,7 +162,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -98,72 +190,290 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Infrastructure\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "TransportBot.Infrastructure\\Services\\UserService.cs",
-              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Infrastructure\\Services\\UserService.cs",
-              "RelativeToolTip": "TransportBot.Infrastructure\\Services\\UserService.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAgwBUAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-02T08:03:37.935Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Infrastructure\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "TransportBot.Infrastructure\\Repositories\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Infrastructure\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "TransportBot.Infrastructure\\Repositories\\UserRepository.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAlwBoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-02T07:32:02.262Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Core\\Interfaces\\IUserService.cs",
-              "RelativeDocumentMoniker": "TransportBot.Core\\Interfaces\\IUserService.cs",
-              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Core\\Interfaces\\IUserService.cs",
-              "RelativeToolTip": "TransportBot.Core\\Interfaces\\IUserService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T16:19:58.798Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Core\\Interfaces\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "TransportBot.Core\\Interfaces\\IUserRepository.cs",
-              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Core\\Interfaces\\IUserRepository.cs",
-              "RelativeToolTip": "TransportBot.Core\\Interfaces\\IUserRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAApAAAA",
+              "Title": "ITransportApiService.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Core\\Interfaces\\ITransportApiService.cs",
+              "RelativeDocumentMoniker": "TransportBot.Core\\Interfaces\\ITransportApiService.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Core\\Interfaces\\ITransportApiService.cs",
+              "RelativeToolTip": "TransportBot.Core\\Interfaces\\ITransportApiService.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAtwBUAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T14:55:12.799Z",
+              "WhenOpened": "2025-09-09T14:48:45.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RefactoredTransportApiService.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Services\\Services\\RefactoredTransportApiService.cs",
+              "RelativeDocumentMoniker": "TransportBot.Services\\Services\\RefactoredTransportApiService.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Services\\Services\\RefactoredTransportApiService.cs",
+              "RelativeToolTip": "TransportBot.Services\\Services\\RefactoredTransportApiService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAD4vw0AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T14:46:50.913Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "YandexApiService.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Services\\Services\\YandexApiService.cs",
+              "RelativeDocumentMoniker": "TransportBot.Services\\Services\\YandexApiService.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Services\\Services\\YandexApiService.cs",
+              "RelativeToolTip": "TransportBot.Services\\Services\\YandexApiService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T14:46:48.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GeocodingService.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Services\\Services\\GeocodingService.cs",
+              "RelativeDocumentMoniker": "TransportBot.Services\\Services\\GeocodingService.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Services\\Services\\GeocodingService.cs",
+              "RelativeToolTip": "TransportBot.Services\\Services\\GeocodingService.cs",
+              "ViewState": "AQIAAEwAAAAAAAAAAIAwwFAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T14:46:42.397Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TransportApiService.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Services\\Services\\TransportApiService.cs",
+              "RelativeDocumentMoniker": "TransportBot.Services\\Services\\TransportApiService.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Services\\Services\\TransportApiService.cs",
+              "RelativeToolTip": "TransportBot.Services\\Services\\TransportApiService.cs",
+              "ViewState": "AQIAAAABAAAAAAAAAAD4vwoBAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T06:29:26.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TelegramBotService.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Services\\Services\\TelegramBotService.cs",
+              "RelativeDocumentMoniker": "TransportBot.Services\\Services\\TelegramBotService.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Services\\Services\\TelegramBotService.cs",
+              "RelativeToolTip": "TransportBot.Services\\Services\\TelegramBotService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T11:37:30.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SubscriptionController.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.WebApi\\Controllers\\SubscriptionController.cs",
+              "RelativeDocumentMoniker": "TransportBot.WebApi\\Controllers\\SubscriptionController.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.WebApi\\Controllers\\SubscriptionController.cs",
+              "RelativeToolTip": "TransportBot.WebApi\\Controllers\\SubscriptionController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T10:54:13.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ISubscriptionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Core\\Interfaces\\ISubscriptionRepository.cs",
+              "RelativeDocumentMoniker": "TransportBot.Core\\Interfaces\\ISubscriptionRepository.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Core\\Interfaces\\ISubscriptionRepository.cs",
+              "RelativeToolTip": "TransportBot.Core\\Interfaces\\ISubscriptionRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T10:54:05.968Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ITelegramBotService.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Core\\Interfaces\\ITelegramBotService.cs",
+              "RelativeDocumentMoniker": "TransportBot.Core\\Interfaces\\ITelegramBotService.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Core\\Interfaces\\ITelegramBotService.cs",
+              "RelativeToolTip": "TransportBot.Core\\Interfaces\\ITelegramBotService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T10:52:43.36Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.WebApi\\Program.cs",
+              "RelativeDocumentMoniker": "TransportBot.WebApi\\Program.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.WebApi\\Program.cs",
+              "RelativeToolTip": "TransportBot.WebApi\\Program.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAD4vx8AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T07:23:21.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RouteController.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.WebApi\\Controllers\\RouteController.cs",
+              "RelativeDocumentMoniker": "TransportBot.WebApi\\Controllers\\RouteController.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.WebApi\\Controllers\\RouteController.cs",
+              "RelativeToolTip": "TransportBot.WebApi\\Controllers\\RouteController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T10:53:16.257Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RouteRepository.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Infrastructure\\Repositories\\RouteRepository.cs",
+              "RelativeDocumentMoniker": "TransportBot.Infrastructure\\Repositories\\RouteRepository.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Infrastructure\\Repositories\\RouteRepository.cs",
+              "RelativeToolTip": "TransportBot.Infrastructure\\Repositories\\RouteRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T10:54:15.955Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TelegramController.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.WebApi\\Controllers\\TelegramController.cs",
+              "RelativeDocumentMoniker": "TransportBot.WebApi\\Controllers\\TelegramController.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.WebApi\\Controllers\\TelegramController.cs",
+              "RelativeToolTip": "TransportBot.WebApi\\Controllers\\TelegramController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T10:54:19.403Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TransportStopRepository.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Infrastructure\\Repositories\\TransportStopRepository.cs",
+              "RelativeDocumentMoniker": "TransportBot.Infrastructure\\Repositories\\TransportStopRepository.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Infrastructure\\Repositories\\TransportStopRepository.cs",
+              "RelativeToolTip": "TransportBot.Infrastructure\\Repositories\\TransportStopRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T10:54:20.26Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SubscriptionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Infrastructure\\Repositories\\SubscriptionRepository.cs",
+              "RelativeDocumentMoniker": "TransportBot.Infrastructure\\Repositories\\SubscriptionRepository.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Infrastructure\\Repositories\\SubscriptionRepository.cs",
+              "RelativeToolTip": "TransportBot.Infrastructure\\Repositories\\SubscriptionRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T10:53:49.872Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "RouteService.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Services\\Services\\RouteService.cs",
+              "RelativeDocumentMoniker": "TransportBot.Services\\Services\\RouteService.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Services\\Services\\RouteService.cs",
+              "RelativeToolTip": "TransportBot.Services\\Services\\RouteService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T10:53:40.509Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SubscriptionService.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Services\\Services\\SubscriptionService.cs",
+              "RelativeDocumentMoniker": "TransportBot.Services\\Services\\SubscriptionService.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Services\\Services\\SubscriptionService.cs",
+              "RelativeToolTip": "TransportBot.Services\\Services\\SubscriptionService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T10:53:03.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "TransportStopController.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.WebApi\\Controllers\\TransportStopController.cs",
+              "RelativeDocumentMoniker": "TransportBot.WebApi\\Controllers\\TransportStopController.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.WebApi\\Controllers\\TransportStopController.cs",
+              "RelativeToolTip": "TransportBot.WebApi\\Controllers\\TransportStopController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T10:52:51.964Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ITransportStopService.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Core\\Interfaces\\ITransportStopService.cs",
+              "RelativeDocumentMoniker": "TransportBot.Core\\Interfaces\\ITransportStopService.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Core\\Interfaces\\ITransportStopService.cs",
+              "RelativeToolTip": "TransportBot.Core\\Interfaces\\ITransportStopService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T15:44:48.322Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "TransportBot.WebApi.http",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.WebApi\\TransportBot.WebApi.http",
+              "RelativeDocumentMoniker": "TransportBot.WebApi\\TransportBot.WebApi.http",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.WebApi\\TransportBot.WebApi.http",
+              "RelativeToolTip": "TransportBot.WebApi\\TransportBot.WebApi.http",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-09-03T12:04:38.4Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Services\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "TransportBot.Services\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Services\\Services\\UserService.cs",
+              "RelativeToolTip": "TransportBot.Services\\Services\\UserService.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAkwBoAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T12:02:20.161Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Core\\Interfaces\\IUserService.cs",
+              "RelativeDocumentMoniker": "TransportBot.Core\\Interfaces\\IUserService.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Core\\Interfaces\\IUserService.cs",
+              "RelativeToolTip": "TransportBot.Core\\Interfaces\\IUserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T16:19:58.798Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.WebApi\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "TransportBot.WebApi\\Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.WebApi\\Controllers\\UserController.cs",
               "RelativeToolTip": "TransportBot.WebApi\\Controllers\\UserController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T14:41:57.245Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-01T14:41:57.245Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 37,
               "Title": "TransportStatus.cs",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Core\\Entities\\TransportStatus.cs",
               "RelativeDocumentMoniker": "TransportBot.Core\\Entities\\TransportStatus.cs",
@@ -175,20 +485,79 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 19,
+              "Title": "ITransportStopRepository.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Core\\Interfaces\\ITransportStopRepository.cs",
+              "RelativeDocumentMoniker": "TransportBot.Core\\Interfaces\\ITransportStopRepository.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Core\\Interfaces\\ITransportStopRepository.cs",
+              "RelativeToolTip": "TransportBot.Core\\Interfaces\\ITransportStopRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T15:41:23.241Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Core\\Entities\\User.cs",
               "RelativeDocumentMoniker": "TransportBot.Core\\Entities\\User.cs",
               "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Core\\Entities\\User.cs",
               "RelativeToolTip": "TransportBot.Core\\Entities\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAwAAAAsAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA4AAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-31T13:50:09.609Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-31T13:50:09.609Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 21,
+              "Title": "TransportBot.Services.csproj",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Services\\TransportBot.Services.csproj",
+              "RelativeDocumentMoniker": "TransportBot.Services\\TransportBot.Services.csproj",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Services\\TransportBot.Services.csproj",
+              "RelativeToolTip": "TransportBot.Services\\TransportBot.Services.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-03T12:13:47.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Core\\Interfaces\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "TransportBot.Core\\Interfaces\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Core\\Interfaces\\IUserRepository.cs",
+              "RelativeToolTip": "TransportBot.Core\\Interfaces\\IUserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T14:55:12.799Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "UpdateUserRequest.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.WebApi\\DTOs\\UpdateUserRequest.cs",
+              "RelativeDocumentMoniker": "TransportBot.WebApi\\DTOs\\UpdateUserRequest.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.WebApi\\DTOs\\UpdateUserRequest.cs",
+              "RelativeToolTip": "TransportBot.WebApi\\DTOs\\UpdateUserRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T15:04:19.555Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "RegisterRequest.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.WebApi\\DTOs\\RegisterRequest.cs",
+              "RelativeDocumentMoniker": "TransportBot.WebApi\\DTOs\\RegisterRequest.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.WebApi\\DTOs\\RegisterRequest.cs",
+              "RelativeToolTip": "TransportBot.WebApi\\DTOs\\RegisterRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T15:09:07.7Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
               "Title": "TransportDbContext.cs",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Infrastructure\\Data\\TransportDbContext.cs",
               "RelativeDocumentMoniker": "TransportBot.Infrastructure\\Data\\TransportDbContext.cs",
@@ -200,7 +569,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 29,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "TransportBot.Infrastructure\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "TransportBot.Infrastructure\\Repositories\\UserRepository.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAlwBoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T07:32:02.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
               "Title": "Subscription.cs",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Core\\Entities\\Subscription.cs",
               "RelativeDocumentMoniker": "TransportBot.Core\\Entities\\Subscription.cs",
@@ -212,7 +593,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 33,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.WebApi\\appsettings.json",
               "RelativeDocumentMoniker": "TransportBot.WebApi\\appsettings.json",
@@ -224,7 +605,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 31,
               "Title": "Route.cs",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Core\\Entities\\Route.cs",
               "RelativeDocumentMoniker": "TransportBot.Core\\Entities\\Route.cs",
@@ -236,7 +617,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 30,
               "Title": "RouteStop.cs",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Core\\Entities\\RouteStop.cs",
               "RelativeDocumentMoniker": "TransportBot.Core\\Entities\\RouteStop.cs",
@@ -248,19 +629,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.WebApi\\Program.cs",
-              "RelativeDocumentMoniker": "TransportBot.WebApi\\Program.cs",
-              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.WebApi\\Program.cs",
-              "RelativeToolTip": "TransportBot.WebApi\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T07:23:21.029Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 34,
               "Title": "TransportStop.cs",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Core\\Entities\\TransportStop.cs",
               "RelativeDocumentMoniker": "TransportBot.Core\\Entities\\TransportStop.cs",
@@ -272,7 +641,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 36,
               "Title": "TransportBot.Core.csproj",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Desktop\\TransportNotificationBot\\TransportBot.Core\\TransportBot.Core.csproj",
               "RelativeDocumentMoniker": "TransportBot.Core\\TransportBot.Core.csproj",

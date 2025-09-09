@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using TransportBot.Core.Entities;
 using TransportBot.Core.Interfaces;
@@ -17,7 +17,6 @@ namespace TransportBot.WebApi.Controllers
             _service = service;
         }
 
-        // POST /api/user/register
         [HttpPost("register")]
         public async Task<ActionResult<User>> Register([FromBody] RegisterRequest request)
         {
@@ -25,8 +24,7 @@ namespace TransportBot.WebApi.Controllers
             return Ok(user);
         }
 
-        // GET /api/user/{id}
-        [HttpGet("id")]
+        [HttpGet("{id}")]
         public async Task<ActionResult<User>> Get(int id)
         {
             var user = await _service.GetAsync(id);
@@ -34,7 +32,6 @@ namespace TransportBot.WebApi.Controllers
             return Ok(user);
         }
 
-        // PUT /api/user/{id}
         [HttpPut("{id}")]
         public async Task<ActionResult<User>> Update(int id, [FromBody] UpdateUserRequest request)
         {
@@ -42,7 +39,6 @@ namespace TransportBot.WebApi.Controllers
             return Ok(user);
         }
 
-        // DELETE /api/user/{id}
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
