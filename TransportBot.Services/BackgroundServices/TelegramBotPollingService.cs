@@ -49,7 +49,7 @@ namespace TransportBot.Services.BackgroundServices
             }
             catch (OperationCanceledException)
             {
-                break;
+                _logger.LogInformation("Telegram Bot Polling Service cancelled");
             }
             catch (Exception ex)
             {
