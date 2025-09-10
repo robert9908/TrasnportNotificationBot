@@ -1,0 +1,11 @@
+### Clean up invalid station codes
+POST https://localhost:7116/api/maintenance/cleanup-invalid-stations
+Accept: application/json
+
+### Get active subscriptions
+GET https://localhost:7116/api/maintenance/active-subscriptions
+Accept: application/json
+
+### Test health endpoint
+GET https://localhost:7116/api/health
+Accept: application/json
