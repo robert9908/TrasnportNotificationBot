@@ -344,16 +344,38 @@ namespace TransportBot.Services.Services
 
                 if (!string.IsNullOrWhiteSpace(query))
                 {
+                    _logger.LogInformation("Starting geocoding for: {Query}", query);
                     var geo = await GeocodeAsync(query);
+                    
                     if (!geo.HasValue)
                     {
+                        _logger.LogInformation("First geocoding failed, trying with 'Москва {Query}'", query);
                         geo = await GeocodeAsync($"Москва {query}");
                     }
+                    
+                    if (!geo.HasValue)
+                    {
+                        _logger.LogInformation("Second geocoding failed, trying with 'станция {Query}'", query);
+                        geo = await GeocodeAsync($"станция {query}");
+                    }
+                    
+                    if (!geo.HasValue)
+                    {
+                        _logger.LogInformation("Third geocoding failed, trying with 'остановка {Query}'", query);
+                        geo = await GeocodeAsync($"остановка {query}");
+                    }
+                    
                     if (geo.HasValue)
                     {
                         _logger.LogInformation("Geocode '{Query}' => lat={Lat}, lon={Lon}", query, geo.Value.lat, geo.Value.lon);
-                        var nearby = await GetNearbyStationsAsync(geo.Value.lat, geo.Value.lon, 5000);
-                        if (nearby.Any()) return nearby;
+                        var nearby = await GetNearbyStationsAsync(geo.Value.lat, geo.Value.lon, 10000);
+                        var nearbyList = nearby.ToList();
+                        _logger.LogInformation("Found {Count} nearby stations", nearbyList.Count);
+                        if (nearbyList.Any()) return nearbyList;
+                    }
+                    else
+                    {
+                        _logger.LogWarning("All geocoding attempts failed for query: {Query}", query);
                     }
                 }
 
@@ -570,25 +592,132 @@ namespace TransportBot.Services.Services
             try
             {
                 if (string.IsNullOrEmpty(query)) return null;
-                var url = $"https://nominatim.openstreetmap.org/search?format=json&q={Uri.EscapeDataString(query)}&limit=1";
+
+                var result = await TryGeocodeWithYandex(query);
+                if (result.HasValue) return result;
+
+                var alternativeQueries = new[]
+                {
+                    $"{query}, Москва",
+                    $"станция {query}",
+                    $"метро {query}",
+                    query.Replace("станция", "").Replace("метро", "").Trim()
+                };
+
+                foreach (var altQuery in alternativeQueries)
+                {
+                    if (altQuery != query)
+                    {
+                        result = await TryGeocodeWithYandex(altQuery);
+                        if (result.HasValue) return result;
+                    }
+                }
+
+                return null;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogWarning(ex, "Geocoding request failed for query: {Query}", query);
+                return null;
+            }
+        }
+
+        private async Task<(double lat, double lon)?> TryGeocodeWithYandex(string query)
+        {
+            try
+            {
+                await Task.Delay(500);
+
+                using var httpClient = new HttpClient();
+                httpClient.Timeout = TimeSpan.FromSeconds(10);
+                
+                var url = $"https://geocode-maps.yandex.ru/1.x/?apikey={_apiKey}&geocode={Uri.EscapeDataString(query)}&format=json&results=1&lang=ru_RU";
+                
+                _logger.LogInformation("Yandex geocoding query: {Query}", query);
+                var resp = await httpClient.GetAsync(url);
+
+                if (!resp.IsSuccessStatusCode) 
+                {
+                    var errorContent = await resp.Content.ReadAsStringAsync();
+                    _logger.LogWarning("Yandex geocoding request failed: {StatusCode}, Response: {Response}", resp.StatusCode, errorContent);
+                    return null;
+                }
+
+                var json = await resp.Content.ReadAsStringAsync();
+                var response = JsonSerializer.Deserialize<YandexGeocoderResponse>(json);
+                
+                var geoObject = response?.Response?.GeoObjectCollection?.FeatureMember?.FirstOrDefault()?.GeoObject;
+                if (geoObject?.Point?.Pos == null)
+                {
+                    _logger.LogInformation("No Yandex geocoding results for query: {Query}", query);
+                    return null;
+                }
+
+                var coords = geoObject.Point.Pos.Split(' ');
+                if (coords.Length == 2 && 
+                    double.TryParse(coords[0], System.Globalization.CultureInfo.InvariantCulture, out var lon) &&
+                    double.TryParse(coords[1], System.Globalization.CultureInfo.InvariantCulture, out var lat))
+                {
+                    _logger.LogInformation("Yandex geocoded '{Query}' to lat={Lat}, lon={Lon}", query, lat, lon);
+                    return (lat, lon);
+                }
+                return null;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogWarning(ex, "Yandex geocoding failed for query: {Query}", query);
+                return null;
+            }
+        }
+
+        private async Task<(double lat, double lon)?> TryGeocodeWithNominatim(string query)
+        {
+            try
+            {
+                await Task.Delay(1500);
+
+                using var httpClient = new HttpClient();
+                httpClient.Timeout = TimeSpan.FromSeconds(10);
+                
+                var url = $"https://nominatim.openstreetmap.org/search?format=json&q={Uri.EscapeDataString(query)}&limit=1&addressdetails=1&countrycodes=ru";
+                
                 using var req = new HttpRequestMessage(HttpMethod.Get, url);
-                req.Headers.Add("User-Agent", "TransportNotificationBot/1.0");
-                var resp = await _httpClient.SendAsync(req);
-                if (!resp.IsSuccessStatusCode) return null;
+                
+                req.Headers.Add("User-Agent", "TransportNotificationBot/1.0 (https://github.com/transport-bot; contact@transport-bot.ru)");
+                req.Headers.Add("Accept", "application/json");
+                req.Headers.Add("Accept-Language", "ru-RU,ru;q=0.9,en;q=0.8");
+                req.Headers.Add("Referer", "https://transport-bot.ru");
+
+                _logger.LogInformation("Geocoding query: {Query}", query);
+                var resp = await httpClient.SendAsync(req);
+
+                if (!resp.IsSuccessStatusCode) 
+                {
+                    var errorContent = await resp.Content.ReadAsStringAsync();
+                    _logger.LogWarning("Geocoding request failed: {StatusCode}, Response: {Response}", resp.StatusCode, errorContent);
+                    return null;
+                }
+
                 var json = await resp.Content.ReadAsStringAsync();
                 var items = JsonSerializer.Deserialize<List<NominatimItem>>(json);
                 var first = items?.FirstOrDefault();
-                if (first == null) return null;
+                if (first == null) 
+                {
+                    _logger.LogInformation("No geocoding results for query: {Query}", query);
+                    return null;
+                }
+
                 if (double.TryParse(first.lat, System.Globalization.CultureInfo.InvariantCulture, out var la)
                     && double.TryParse(first.lon, System.Globalization.CultureInfo.InvariantCulture, out var lo))
                 {
+                    _logger.LogInformation("Geocoded '{Query}' to lat={Lat}, lon={Lon}", query, la, lo);
                     return (la, lo);
                 }
                 return null;
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Error geocoding query {Query}", query);
+                _logger.LogWarning(ex, "Nominatim geocoding failed for query: {Query}", query);
                 return null;
             }
         }
@@ -597,6 +726,42 @@ namespace TransportBot.Services.Services
         {
             public string lat { get; set; } = string.Empty;
             public string lon { get; set; } = string.Empty;
+        }
+
+        private class YandexGeocoderResponse
+        {
+            [JsonPropertyName("response")]
+            public YandexGeocoderResponseData? Response { get; set; }
+        }
+
+        private class YandexGeocoderResponseData
+        {
+            [JsonPropertyName("GeoObjectCollection")]
+            public YandexGeoObjectCollection? GeoObjectCollection { get; set; }
+        }
+
+        private class YandexGeoObjectCollection
+        {
+            [JsonPropertyName("featureMember")]
+            public List<YandexFeatureMember>? FeatureMember { get; set; }
+        }
+
+        private class YandexFeatureMember
+        {
+            [JsonPropertyName("GeoObject")]
+            public YandexGeoObject? GeoObject { get; set; }
+        }
+
+        private class YandexGeoObject
+        {
+            [JsonPropertyName("Point")]
+            public YandexPoint? Point { get; set; }
+        }
+
+        private class YandexPoint
+        {
+            [JsonPropertyName("pos")]
+            public string? Pos { get; set; }
         }
     }
 

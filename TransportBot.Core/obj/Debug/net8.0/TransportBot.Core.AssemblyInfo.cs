@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TransportBot.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+24015f927637d90205fc643258470b6df1e12846")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a1a682e4bc8d055d5eccba39d0d503209a30c8f1")]
 [assembly: System.Reflection.AssemblyProductAttribute("TransportBot.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TransportBot.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

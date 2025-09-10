@@ -532,7 +532,8 @@ namespace TransportBot.Services.Services
                          "Я помогу вам получать уведомления о прибытии общественного транспорта.\n\n" +
                          "🔍 Способы поиска остановок:\n" +
                          "📍 Поделитесь геолокацией для поиска ближайших остановок\n" +
-                         "🔍 /search <название> - поиск по названию";
+                         "🚉 /station <код_станции> - поиск по коду станции (например: /station s9602494)\n\n" +
+                         "⚠️ Поиск по названию (/search) временно не работает";
 
             await SendLocationRequestAsync(chatId, message);
         }
@@ -634,8 +635,13 @@ namespace TransportBot.Services.Services
                     return;
                 }
 
+                await SendMessageAsync(chatId, $"🔍 Ищу станции по запросу \"{searchQuery}\"...");
+                
+                _logger.LogInformation("Searching for stations with query: {Query}", searchQuery);
                 var stations = await _transportApiService.SearchStationsAsync(searchQuery);
                 var list = stations.Take(10).ToList();
+                
+                _logger.LogInformation("Found {Count} stations for query: {Query}", list.Count, searchQuery);
 
                 if (list.Any())
                 {
@@ -647,17 +653,17 @@ namespace TransportBot.Services.Services
                         buttons.Add(new List<(string, string)>{(title, $"yst_{st.Code}")});
                     }
 
-                    await SendInlineKeyboardAsync(chatId, $"🔍 Найденные станции (Яндекс) по запросу \"{searchQuery}\":", buttons);
+                    await SendInlineKeyboardAsync(chatId, $"🔍 Найденные станции по запросу \"{searchQuery}\":", buttons);
                 }
                 else
                 {
-                    await SendMessageAsync(chatId, $"❌ Станции по запросу \"{searchQuery}\" не найдены. Попробуйте иной запрос.");
+                    await SendMessageAsync(chatId, $"❌ Станции по запросу \"{searchQuery}\" не найдены.\n\nПопробуйте:\n• /search Москва {searchQuery}\n• /search метро {searchQuery}\n• /station s9602494 (прямой код)");
                 }
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, "Error searching stops by name: {SearchQuery}", searchQuery);
-                await SendMessageAsync(chatId, "❌ Ошибка при поиске станций.");
+                await SendMessageAsync(chatId, "❌ Ошибка при поиске станций. Попробуйте /station с прямым кодом станции.");
             }
         }
 
